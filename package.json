@@ -1,0 +1,14 @@
+{
+  "name": "spa-router",
+  "version": "1.0.0",
+  "description": "Minimalist SPA router",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server-spa . ./index.html"
+  },
+  "author": "Maximo Martinez Soria <maximo.martinezsoria@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server-spa": "^1.3.0"
+  }
+}
