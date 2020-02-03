@@ -26,6 +26,47 @@ Finally, run the app.
 npm start
 ```
 
+## Usage
+
+### Define routes
+
+All routes are defined in `/router/routes.js` file.
+
+Example:
+
+```
+const routes = [
+    {
+        path: '/',
+        template: '<h1>Home</h1>'
+    },
+    {
+        path: '/about',
+        template: '<h1>About</h1>'
+    },
+    {
+        path: '/contact',
+        template: '<h1>Contact</h1>'
+    },
+    {
+        path: '/404',
+        template: '<h1>Not found</h1>'
+    },
+]
+```
+
+**Note:** last element in the array it will be the default route for not found urls.
+
+### Go to routes
+
+This step is very simple. You just need to call the `loadRoute` method with the url path that you want to render.
+
+Example:
+
+```
+<button onclick="router.loadRoute('about')">About</button>
+```
+
 ## Authors
 
 - **Maximo Martinez Soria** - _Frontend developer_ - [maximomartinezsoria](https://github.com/maximomartinezsoria)
