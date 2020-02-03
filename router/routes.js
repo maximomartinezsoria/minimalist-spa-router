@@ -10,4 +10,8 @@ const routes = [{
         path: '/contact',
         template: '<h1>Contact</h1>'
     },
+    {
+        path: '/404',
+        template: '<h1>Not found</h1>'
+    },
 ]

@@ -25,6 +25,8 @@ class Router {
             return routePathSegs.every((routePathSeg, i) => routePathSeg === urlSegs[i]);
         });
 
+        if (!matchedRoutes) return this.routes[this.routes.length - 1];
+
         return matchedRoutes;
     }
 
